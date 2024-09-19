@@ -44,20 +44,11 @@ export default function Footer() {
         </span>
         <Link
           href="mailto:ericledat00@outlook.com"
+          target="_blank"
           passHref
           className="text-xs text-muted-foreground hover:text-foreground"
         >
-          <Button variant={"outline"}
-            onClick={() => {
-              navigator.clipboard.writeText("ericledat00@outlook.com")
-                .then(() => {
-                  alert("Email address copied to clipboard!");
-                })
-                .catch((err) => {
-                  console.error("Failed to copy text: ", err);
-                });
-            }}
-          >
+          <Button variant={"outline"}>
             <MailIcon className="h-4 w-4 md:mr-2" />
             <span className="hidden md:flex text-sm">ericledat00@outlook.com</span>
           </Button>
