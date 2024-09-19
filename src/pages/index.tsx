@@ -297,7 +297,11 @@ export default function Home() {
             className="mt-14 h-full w-full xl:mt-0"
           >
             <Suspense fallback={<span>Loading...</span>}>
-              <Spline scene="/assets/scene.splinecode" />
+              <img 
+                src="/assets/hero.jpg" 
+                alt="Scene" 
+                className="w-full h-[517px] object-cover" 
+              />            
             </Suspense>
           </div>
         </section>
