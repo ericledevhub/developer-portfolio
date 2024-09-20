@@ -286,8 +286,13 @@ export default function Home() {
                 isScrolled && styles["scroll--hidden"],
               )}
             >
-              Scroll to discover{" "}
-              <TriangleDownIcon className="mt-1 animate-bounce" />
+              <Button
+                variant="outline"
+                onClick={() => scrollTo(document.querySelector("#about"))}
+              >
+                Scroll to discover{" "}
+                <TriangleDownIcon className="mt-1 animate-bounce" />
+              </Button>
             </div>
           </div>
           <div
