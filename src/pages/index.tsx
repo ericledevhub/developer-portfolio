@@ -73,6 +73,12 @@ const projects_about_GANs = [
 {/* Project LLM Agents Constants*/}
 const projects_about_llm_agents = [
   {
+    title: "SQL Agent Distribution",
+    description: "SQL Agent Distribution Plot",
+    image: "/assets/llm_agents/ChinookDatabasePersonalPortfolio1.webp",
+    href: "https://github.com/ericledevhub/sqlagent",
+  },
+  {
     title: "SQL Agent Pie Chart",
     description: "SQL Agent Pie Chart Plot",
     image: "/assets/llm_agents/ChinnokDatabasePersonalPortfolioPieChart.png",
@@ -83,12 +89,6 @@ const projects_about_llm_agents = [
     description: "MF4 Agent 2D Histogram Plot",
     image: "/assets/llm_agents/MF42DHistgram.png",
     href: "https://github.com/ericledevhub/mf4agent",
-  },
-  {
-    title: "SQL Agent Distribution",
-    description: "SQL Agent Distribution Plot",
-    image: "/assets/llm_agents/ChinookDatabasePersonalPortfolio1.webp",
-    href: "https://github.com/ericledevhub/sqlagent",
   },
   {
     title: "MF4 Agent Linear Regression Scatter Plot",
@@ -524,11 +524,16 @@ export default function Home() {
                             )}
                           </Link>
                         </CardHeader>
-                        <CardContent className="absolute bottom-0 w-full bg-background/50 backdrop-blur">
-                          <CardTitle className="border-t border-white/5 p-4 text-base font-normal tracking-tighter">
-                            {project.description}
-                          </CardTitle>
-                        </CardContent>
+
+                        <div className="relative group">
+                          <CardContent 
+                            className="absolute bottom-0 w-full bg-background/50 backdrop-blur opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <CardTitle className="border-t border-white/5 p-4 text-base font-normal tracking-tighter">
+                              {project.description}
+                            </CardTitle>
+                          </CardContent>
+                        </div>
+                        
                       </Card>
                     </CarouselItem>
                   ))}
@@ -571,11 +576,16 @@ export default function Home() {
                             )}
                           </Link>
                         </CardHeader>
-                        <CardContent className="absolute bottom-0 w-full bg-background/50 backdrop-blur">
-                          <CardTitle className="border-t border-white/5 p-4 text-base font-normal tracking-tighter">
-                            {project.description}
-                          </CardTitle>
-                        </CardContent>
+
+                        <div className="relative group">
+                          <CardContent 
+                            className="absolute bottom-0 w-full bg-background/50 backdrop-blur opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <CardTitle className="border-t border-white/5 p-4 text-base font-normal tracking-tighter">
+                              {project.description}
+                            </CardTitle>
+                          </CardContent>
+                        </div>
+
                       </Card>
                     </CarouselItem>
                   ))}
