@@ -9,9 +9,12 @@ import {
   SearchCheck,
   Database,
   MonitorSmartphone,
+  GraduationCap,
+  Briefcase,
+  Star,
+  Luggage,
 } from "lucide-react";
 import { TriangleDownIcon } from "@radix-ui/react-icons";
-import Spline from "@splinetool/react-spline";
 import Link from "next/link";
 import { cn, scrollTo } from "@/lib/utils";
 import Image from "next/image";
@@ -26,6 +29,11 @@ import {
 } from "@/components/ui/carousel";
 import VanillaTilt from "vanilla-tilt";
 import { motion } from "framer-motion";
+
+import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
+
+import { SiVolvo } from "react-icons/si";
 
 {/* About Stats Constants */}
 const aboutStats = [
@@ -65,27 +73,27 @@ const projects_about_GANs = [
 {/* Project LLM Agents Constants*/}
 const projects_about_llm_agents = [
   {
-    title: "SQL Agent Distribution",
-    description: "SQL Agent Distribution Plot",
-    image: "/assets/llm_agents/ChinookDatabasePersonalPortfolio1.webp",
-    href: "https://github.com/ericledevhub/sqlagent",
-  },
-  {
     title: "SQL Agent Pie Chart",
     description: "SQL Agent Pie Chart Plot",
     image: "/assets/llm_agents/ChinnokDatabasePersonalPortfolioPieChart.png",
     href: "https://github.com/ericledevhub/sqlagent",
   },
   {
-    title: "MF4 Agent Linear Regression Scatter Plot",
-    description: "MF4 Agent Linear Regresion Scatter Plot",
-    image: "/assets/llm_agents/MF4PersonalPortfolio2.webp",
-    href: "https://github.com/ericledevhub/mf4agent",
-  },
-  {
     title: "MF4 Agent 2D Histogram Plot",
     description: "MF4 Agent 2D Histogram Plot",
     image: "/assets/llm_agents/MF42DHistgram.png",
+    href: "https://github.com/ericledevhub/mf4agent",
+  },
+  {
+    title: "SQL Agent Distribution",
+    description: "SQL Agent Distribution Plot",
+    image: "/assets/llm_agents/ChinookDatabasePersonalPortfolio1.webp",
+    href: "https://github.com/ericledevhub/sqlagent",
+  },
+  {
+    title: "MF4 Agent Linear Regression Scatter Plot",
+    description: "MF4 Agent Linear Regresion Scatter Plot",
+    image: "/assets/llm_agents/MF4PersonalPortfolio2.webp",
     href: "https://github.com/ericledevhub/mf4agent",
   },
 ];
@@ -311,12 +319,11 @@ export default function Home() {
           </div>
         </section>
 
-        {/* About */}
+        {/* About Section */}
         <section id="about" data-scroll-section>
           <div
             data-scroll
             data-scroll-speed=".4"
-            data-scroll-position="top"
             className="my-14 flex max-w-6xl flex-col justify-start space-y-10 relative isolate -z-10"
           >
             <span className="text-gradient clash-grotesk text-lg font-semibold tracking-tighter">
@@ -352,6 +359,107 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Career Section */}
+        <section id="career" data-scroll-section>
+        <div
+            data-scroll
+            data-scroll-speed=".4"
+            className="my-28 space-y-10 relative"
+            >
+            <span className="text-gradient clash-grotesk text-lg font-semibold tracking-tighter">
+              ✨ Career
+            </span> 
+            <VerticalTimeline lineColor={'linear-gradient(to bottom right, hsla(237, 99%, 74%, 0.065), hsla(0, 0%, 100%, 0.05))'}>
+
+              <VerticalTimelineElement
+                className="vertical-timeline-element--work clash-grotesk transition duration-300 hover:-translate-y-1.5"
+                contentStyle={{ background: 'linear-gradient(to bottom right, hsla(237, 99%, 74%, 0.065), hsla(0, 0%, 100%, 0.05))'
+                }}
+                contentArrowStyle={{ borderRight: '7px solid  hsl(237, 99%, 74%)' }}
+                date="Jun 2024- Sep 2024"
+                icon={<SiVolvo />}
+              >
+                <h3 className="vertical-timeline-element-title font-semibold">Summer Worker @ Volvo Group Technology</h3>
+                <h4 className="vertical-timeline-element-subtitle font-base">Gothenburg, SE</h4>
+                <p className="text-muted-foreground" style={{ fontWeight: 400 }}>
+                Developed an LLM-based SQL agent for automated query generation, facilitating efficient data extraction and visualization.
+                </p>
+              </VerticalTimelineElement>            
+              
+              <VerticalTimelineElement
+                className="vertical-timeline-element--work clash-grotesk transition duration-300 hover:-translate-y-1.5"
+                contentStyle={{ background: 'linear-gradient(to bottom right, hsla(237, 99%, 74%, 0.065), hsla(0, 0%, 100%, 0.05))'
+                }}
+                contentArrowStyle={{ borderRight: '7px solid  hsl(237, 99%, 74%)' }}
+                date="Jan 2024- Jun 2024"
+                icon={<SiVolvo />}
+              >
+                <h3 className="vertical-timeline-element-title font-semibold">Master's Thesis @ Volvo Group Technology</h3>
+                <h4 className="vertical-timeline-element-subtitle font-base">Gothenburg, SE</h4>
+                <p className="text-muted-foreground" style={{ fontWeight: 400 }}>
+                Engineered an LLM-driven MF4 agent and application to streamline data analysis processes.
+                </p>
+              </VerticalTimelineElement>            
+              
+              <VerticalTimelineElement
+                className="vertical-timeline-element--work clash-grotesk transition duration-300 hover:-translate-y-1.5"
+                contentStyle={{ background: 'linear-gradient(to bottom right, hsla(237, 99%, 74%, 0.065), hsla(0, 0%, 100%, 0.05))'
+                }}
+                contentArrowStyle={{ borderRight: '7px solid  hsl(237, 99%, 74%)' }}
+                date="Jun 2023- Aug 2023"
+                iconStyle={{ background: 'hsla(237, 99%, 74%, 0.1', color: '#fff' }}
+                icon={<Briefcase />}
+              >
+                <h3 className="vertical-timeline-element-title font-semibold">Internship @ BHSOFT Company</h3>
+                <h4 className="vertical-timeline-element-subtitle font-base">Hanoi, VN</h4>
+                <p className="text-muted-foreground" style={{ fontWeight: 400 }}>
+                Researched and implemented Generative Adversarial Networks (GANs) for the creation of realistic images.
+                </p>
+              </VerticalTimelineElement>
+
+              <VerticalTimelineElement
+                className="vertical-timeline-element--work clash-grotesk transition duration-300 hover:-translate-y-1.5"
+                contentStyle={{ background: 'linear-gradient(to bottom right, hsla(237, 99%, 74%, 0.065), hsla(0, 0%, 100%, 0.05))'
+                }}
+                contentArrowStyle={{ borderRight: '7px solid  hsl(237, 99%, 74%)' }}
+                date="Jun 2023- Aug 2023"
+                iconStyle={{ background: 'hsla(237, 99%, 74%, 0.1', color: '#fff' }}
+                icon={<GraduationCap />}
+              >
+                <h3 className="vertical-timeline-element-title font-semibold">Master's Degree @ Chalmers University</h3>
+                <h4 className="vertical-timeline-element-subtitle font-base">Gothenburg, SE</h4>
+                <p className="text-muted-foreground" style={{ fontWeight: 400 }}>
+                  Master of Science in Complex Adaptive Systems with a focus on Machine Learning and Artificial Intelligence.
+                </p>
+              </VerticalTimelineElement>
+
+              <VerticalTimelineElement
+                className="vertical-timeline-element--work clash-grotesk transition duration-300 hover:-translate-y-1.5"
+                contentStyle={{ background: 'linear-gradient(to bottom right, hsla(237, 99%, 74%, 0.065), hsla(0, 0%, 100%, 0.05))'
+                }}
+                contentArrowStyle={{ borderRight: '7px solid  hsl(237, 99%, 74%)' }}
+                date="Jun 2023- Aug 2023"
+                iconStyle={{ background: 'hsla(237, 99%, 74%, 0.1', color: '#fff' }}
+                icon={<GraduationCap />}
+              >
+                <h3 className="vertical-timeline-element-title font-semibold">Bachelor's Degree @ Chalmers University</h3>
+                <h4 className="vertical-timeline-element-subtitle font-base">Gothenburg, SE</h4>
+                <p className="text-muted-foreground " style={{ fontWeight: 400 }}>
+                  Bachelor of Science in Engineering Physics with a focus on theoretical mathematics and physics.
+                </p>
+              </VerticalTimelineElement>
+
+              <VerticalTimelineElement
+                className="vertical-timeline-element--work clash-grotesk transition duration-300 hover:-translate-y-1.5"
+                iconStyle={{ background: 'hsla(237, 99%, 74%, 0.1', color: '#fff' }}
+                icon={<Star />}
+              />
+            </VerticalTimeline>
+
+          </div>
+        </section>
+        
+        
         {/* Projects Section */}
         <section id="projects" data-scroll-section>
           {/* Gradient */}
@@ -369,7 +477,13 @@ export default function Home() {
               />
             </div>
           </div>
-          <div data-scroll data-scroll-speed=".4" data-scroll-position="top" className="my-64">
+          {/* Project Div*/}
+          <div 
+            data-scroll 
+            data-scroll-speed=".4" 
+            data-scroll-position="top" 
+            className="my-32"
+          >
             <span className="text-gradient clash-grotesk text-lg font-semibold tracking-tighter">
               🚀 Featured Projects
             </span>
@@ -550,6 +664,7 @@ export default function Home() {
             </Link>
           </div>
         </section>
+
       </div>
     </Container>
   );
