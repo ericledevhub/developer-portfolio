@@ -496,6 +496,15 @@ export default function Home() {
             </p>
 
             {/* Carousel GANs*/}
+            <motion.div
+              initial={{ opacity: 0, y: -20, x:-20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{
+                duration: 2,
+                staggerChildren: 0.5,
+              }}
+              viewport={{ once: true }}
+            >
             <div className="mt-14">
               <Carousel setApi={setCarouselApiGANs} className="w-full">
                 <CarouselContent>
@@ -601,6 +610,8 @@ export default function Home() {
               </div>
               
             </div>
+
+          </motion.div>
           </div>
         </section>
 
