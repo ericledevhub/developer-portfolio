@@ -155,7 +155,7 @@ export default function Home() {
 
       sections.forEach((section) => {
         const sectionTop = section.offsetTop;
-        if (window.scrollY >= sectionTop - 250) {
+        if (window.scrollY >= sectionTop - 350) {
           current = section.getAttribute("id") ?? "";
         }
       });
@@ -233,7 +233,7 @@ export default function Home() {
               className="flex flex-row items-center space-x-1.5"
             >
               <span className={styles.pill}>Generative AI</span>
-              <span className={styles.pill}>LLMs</span>
+              <span className={styles.pill}>LLM Agents</span>
               <span className={styles.pill}>Python Applications</span>
             </div>
             <div>
@@ -257,7 +257,7 @@ export default function Home() {
                 data-scroll-speed=".06"
                 className="mt-1 max-w-lg tracking-tight text-muted-foreground 2xl:text-xl"
               >
-                  An innovative Generative AI developer with expertise in LLMs and data analysis. 
+                  An innovative Generative AI developer with expertise building LLMs and data analysis. 
                   Skilled in developing and deploying python applications with a strong problem-solving mindset.  
               </p>
             </div>
@@ -319,11 +319,20 @@ export default function Home() {
             data-scroll-position="top"
             className="my-14 flex max-w-6xl flex-col justify-start space-y-10 relative isolate -z-10"
           >
-            <span className="text-gradient clash-grotesk text-sm font-semibold tracking-tighter">
+            <span className="text-gradient clash-grotesk text-lg font-semibold tracking-tighter">
               ✨ About
             </span>
             <h2 className="pb-2 text-3xl font-light leading-normal tracking-tighter text-foreground xl:text-[32px]">
-            Recent Engineering Physics graduate from Chalmers University, specializing in generative AI and Python development. My master's thesis at Volvo Group featured a groundbreaking LLM-based AI agent for MF4 file analysis, capable of translating user requests into code and visualizations. Additionally, I developed an SQL analysis agent for dynamic query generation and data plotting. Skilled in ideation, prototyping, and delivering innovative solutions.
+            Recent Engineering Physics graduate from {" "}
+              <span className="text-gradient font-semibold">
+                Chalmers University
+              </span>, specializing in generative AI and Python development. My master's thesis at {" "}
+              <span className="text-gradient font-semibold">
+                Volvo Group 
+              </span> featured a groundbreaking {" "}
+              <span className="text-gradient font-semibold">
+                LLM-based agent 
+              </span> for MF4 file analysis, capable of translating user requests into code and visualizations. Additionally, I developed an SQL analysis agent for dynamic query generation and data plotting. Skilled in ideation, prototyping, and delivering innovative solutions.
             </h2>
             <div className="grid grid-cols-2 gap-8 xl:grid-cols-3">
               {aboutStats.map((stat) => (
@@ -361,7 +370,7 @@ export default function Home() {
             </div>
           </div>
           <div data-scroll data-scroll-speed=".4" data-scroll-position="top" className="my-64">
-            <span className="text-gradient clash-grotesk text-sm font-semibold tracking-tighter">
+            <span className="text-gradient clash-grotesk text-lg font-semibold tracking-tighter">
               🚀 Featured Projects
             </span>
             <h2 className="mt-3 text-4xl font-semibold tracking-tight tracking-tighter xl:text-6xl">
