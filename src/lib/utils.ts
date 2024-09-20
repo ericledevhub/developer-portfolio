@@ -6,12 +6,12 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 // scroll to element
-export function scrollTo(element: Element | null) {
+export function scrollTo(element: Element | null, alignment: "start" | "center") {
   if (!element) return;
 
   element.scrollIntoView({
     behavior: "smooth",
-    block: "start",
-    inline: "center",
+    block: alignment,
+    inline: "center", // Adjust as needed
   });
 }

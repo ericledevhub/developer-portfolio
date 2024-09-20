@@ -282,7 +282,7 @@ export default function Home() {
               </Link>
               <Button
                 variant="outline"
-                onClick={() => scrollTo(document.querySelector("#about"))}
+                onClick={() => scrollTo(document.querySelector("#about"), "center")}
               >
                 Learn more
               </Button>
@@ -296,7 +296,7 @@ export default function Home() {
             >
               <Button
                 variant="outline"
-                onClick={() => scrollTo(document.querySelector("#about"))}
+                onClick={() => scrollTo(document.querySelector("#about"), "center")}
               >
                 Scroll to discover{" "}
                 <TriangleDownIcon className="mt-1 animate-bounce" />
