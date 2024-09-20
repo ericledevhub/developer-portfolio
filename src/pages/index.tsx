@@ -422,14 +422,14 @@ export default function Home() {
                 contentStyle={{ background: 'linear-gradient(to bottom right, hsla(237, 99%, 74%, 0.065), hsla(0, 0%, 100%, 0.05))'
                 }}
                 contentArrowStyle={{ borderRight: '7px solid  hsl(237, 99%, 74%)' }}
-                date="Jun 2023- Aug 2023"
+                date="Aug 2022- Jun 2024"
                 iconStyle={{ background: 'hsla(237, 99%, 74%, 0.1', color: '#fff' }}
                 icon={<GraduationCap />}
               >
-                <h3 className="vertical-timeline-element-title font-semibold">Master's Degree @ Chalmers University</h3>
-                <h4 className="vertical-timeline-element-subtitle font-base">Gothenburg, SE</h4>
+                <h3 className="vertical-timeline-element-title font-semibold">Master's Degree in Complex Adaptive Systems</h3>
+                <h4 className="vertical-timeline-element-subtitle font-base">Chalmers University, Gothenburg, SE</h4>
                 <p className="text-muted-foreground" style={{ fontWeight: 400 }}>
-                  Master of Science in Complex Adaptive Systems with a focus on Machine Learning and Artificial Intelligence.
+                Specialized in Machine Learning and Artificial Intelligence.
                 </p>
               </VerticalTimelineElement>
 
@@ -438,14 +438,14 @@ export default function Home() {
                 contentStyle={{ background: 'linear-gradient(to bottom right, hsla(237, 99%, 74%, 0.065), hsla(0, 0%, 100%, 0.05))'
                 }}
                 contentArrowStyle={{ borderRight: '7px solid  hsl(237, 99%, 74%)' }}
-                date="Jun 2023- Aug 2023"
+                date="Aug 2019- Jun 2022"
                 iconStyle={{ background: 'hsla(237, 99%, 74%, 0.1', color: '#fff' }}
                 icon={<GraduationCap />}
               >
-                <h3 className="vertical-timeline-element-title font-semibold">Bachelor's Degree @ Chalmers University</h3>
-                <h4 className="vertical-timeline-element-subtitle font-base">Gothenburg, SE</h4>
+                <h3 className="vertical-timeline-element-title font-semibold">Bachelor's Degree in Engineering Physics </h3>
+                <h4 className="vertical-timeline-element-subtitle font-base">Chalmers University, Gothenburg, SE</h4>
                 <p className="text-muted-foreground " style={{ fontWeight: 400 }}>
-                  Bachelor of Science in Engineering Physics with a focus on theoretical mathematics and physics.
+                Focused on theoretical mathematics and physics.
                 </p>
               </VerticalTimelineElement>
 
