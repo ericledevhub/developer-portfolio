@@ -12,8 +12,8 @@ import {
   GraduationCap,
   Briefcase,
   Star,
-  Luggage,
 } from "lucide-react";
+
 import { TriangleDownIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 import { cn, scrollTo } from "@/lib/utils";
@@ -34,6 +34,13 @@ import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timel
 import 'react-vertical-timeline-component/style.min.css';
 
 import { SiVolvo } from "react-icons/si";
+
+{/* Testamonial Slider import */}
+import Testimonials from '@/components/Testimonial';
+import { Splide, SplideSlide } from '@splidejs/react-splide';
+import '@splidejs/splide/dist/css/splide.min.css';
+import Avatar from '@mui/material/Avatar';
+import { indigo, deepPurple } from '@mui/material/colors';
 
 {/* About Stats Constants */}
 const aboutStats = [
@@ -129,6 +136,45 @@ const expertise = [
     description:
       "Continously learning and adapting to new frameworks and technologies.",
     icon: SearchCheck,
+  },
+];
+
+
+{/* Testamonials Constants*/}
+const reviews = [
+  {
+      id: 1,
+      image:
+        'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      name: 'Behrooz Razaznejad',
+      text: "In his Master's Thesis project, Eric has been working with exploring the adaptation of Large Language Models (LLM) for Logged Vehicle Data Analyais. More specific the goal of Eric's Master's Thesis has been to customize and integrate an LLM-based system to automate the resource intensive data analysis process and enhance efficiancy by constructing a multicomponent agent that incoprates prompt enginnering techniques.",
+      text2: "",
+      role: 'Team Manager @ Volvo Group Technology',
+      initials: "BR",
+      avatar_color: deepPurple[900],
+    },
+
+  {
+    id: 2,
+    image:
+      'https://images.unsplash.com/photo-1605462863863-10d9e47e15ee?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    name: 'Behrooz Razaznejad',
+    text: "Eric's performance has fully met the expectations set by his supervisor. Eric has put significant effort into developing the multi-component agent and almost single-handedly made all the implementations. He has been very quick in understanding the fundamentals of data analytics and translated that efficiently into the agentic architecture. ",
+    text2: "Eric has also overdelivered in a few technical areas, such as developing a GUI layout, which will be very important for the future usage of the agent from a Volvo perspective.",
+    role: 'Team Manager @ Volvo Group Technology',
+    initials: "BR",
+    avatar_color: deepPurple[900],
+  },
+  {
+    id: 3,
+    image:
+      'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      name: 'Masoom Kumar',
+      text: 'On the personal side, Eric is quite a direct person and does not hold back regarding his perspective about different aspects of his work. He is very passionate about his work and makes extraordinary efforts to ensure the outcomes of his projects are successful.',
+    text2: "",
+    role: 'Team Lead @ Volvo Group Technology',
+    initials: "MK",
+    avatar_color: indigo[900],
   },
 ];
 
@@ -663,6 +709,9 @@ export default function Home() {
             </motion.div>
           </div>
         </section>
+
+        {/* Testimonials */}
+        < Testimonials/>
 
         {/* Contact */}
         <section id="contact" data-scroll-section className="my-64">
