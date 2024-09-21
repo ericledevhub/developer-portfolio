@@ -16,8 +16,7 @@ import Projects from '@/components/Projects';
 import Expertise from '@/components/Expertise';
 import Testimonials from '@/components/Testimonial';
 import Contact from '@/components/Contact';
-
-
+import HeroImageWithMouseMove from "@/components/Hero";
 
 export default function Home() {
   const refScrollContainer = useRef(null);
@@ -133,11 +132,12 @@ export default function Home() {
               className="flex flex-row items-center space-x-1.5 pt-6"
             >
               <Link href="mailto:ericledat00@outlook.com" target="_blank" passHref>
-                <Button>
+                <Button className="transition duration-300 hover:-translate-y-0.5">
                   Get in touch <ChevronRight className="ml-1 h-4 w-4" />
                 </Button>
               </Link>
               <Button
+                className="transition duration-300 hover:-translate-y-0.5"
                 variant="outline"
                 onClick={() => scrollTo(document.querySelector("#about"), "center")}
               >
@@ -167,11 +167,7 @@ export default function Home() {
             className="mt-14 h-full w-full xl:mt-0"
           >
             <Suspense fallback={<span>Loading...</span>}>
-              <img 
-                src="/assets/hero.jpg" 
-                alt="Scene" 
-                className="w-full h-[517px] object-cover" 
-              />            
+              < HeroImageWithMouseMove />
             </Suspense>
           </div>
         </section>

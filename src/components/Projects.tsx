@@ -148,6 +148,7 @@ const projects_about_GANs = [
             >
             <div className="mt-14">
               <Carousel setApi={setCarouselApiGANs} className="w-full">
+              <CarouselPrevious/>
                 <CarouselContent>
                   {projects_about_GANs.map((project) => (
                     <CarouselItem key={project.title} className="md:basis-1/2">
@@ -188,7 +189,6 @@ const projects_about_GANs = [
                     </CarouselItem>
                   ))}
                 </CarouselContent>
-                <CarouselPrevious />
                 <CarouselNext />
               </Carousel>
               <div className="py-4 text-center text-sm text-muted-foreground">
@@ -200,6 +200,7 @@ const projects_about_GANs = [
 
               {/* Carousel LLM*/}
               <Carousel setApi={setCarouselApiLLMs} className="w-full mt-14">
+              <CarouselPrevious/>
                 <CarouselContent>
                   {projects_about_llm_agents.map((project) => (
                     <CarouselItem key={project.title} className="md:basis-1/2">
@@ -240,7 +241,6 @@ const projects_about_GANs = [
                     </CarouselItem>
                   ))}
                 </CarouselContent>
-                <CarouselPrevious />
                 <CarouselNext />
               </Carousel>
               <div className="py-4 text-center text-sm text-muted-foreground">

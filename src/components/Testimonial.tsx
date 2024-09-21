@@ -26,7 +26,7 @@ const reviews = [
         text2: "",
         role: 'Team Manager @ Volvo Group Technology',
         initials: "BR",
-        avatar_color: deepPurple[900],
+        avatar_color: "#7b82fe",
         title: "Master's Thesis Project Description",
       },
 
@@ -39,7 +39,7 @@ const reviews = [
       text2: "Eric has also overdelivered in a few technical areas, such as developing a GUI layout, which will be very important for the future usage of the agent from a Volvo perspective.",
       role: 'Team Manager @ Volvo Group Technology',
       initials: "BR",
-      avatar_color: deepPurple[900],
+      avatar_color: "#7b82fe",
       title: "Master's Thesis Project Performance",
     },
     {
@@ -75,8 +75,8 @@ return (
           viewport={{ once: true }}
           className=""
           >
-            <div className="select-none px-4 bg-gradient-to-br from-primary/[6.5%] to-white/5 rounded-xl gap-4">
-                <div className="py-16 px-15">
+            <div className="select-none px-4 bg-white/5 p-14 shadow-md backdrop-blur rounded-xl gap-4">
+                <div className="py-10 px-15">
                     <Splide
                         options={{
                             perPage: 1,
@@ -107,7 +107,7 @@ return (
                                             }
                                             >
                                             <Avatar                                     
-                                                className="w-20 h-20 sm:w-24 sm:h-24 mb-4 font-bold transition duration-300 hover:-translate-y-0.5 hover:bg-white/10" 
+                                                className="w-16 h-16 sm:w-24 sm:h-24 mb-4 font-bold transition duration-300 hover:-translate-y-0.5 hover:bg-white/10" 
                                                 sx={{ bgcolor: review.avatar_color }}>
                                                     {review.initials}
                                             </Avatar>
