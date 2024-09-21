@@ -70,9 +70,6 @@ const projects_about_GANs = [
   ];
 
   const Projects = () => {
-    const refScrollContainer = useRef(null);
-    const [isScrolled, setIsScrolled] = useState<boolean>(false);
-  
     const [carouselApiGANs, setCarouselApiGANs] = useState<CarouselApi | null>(null);
     const [currentGANs, setCurrentGANs] = useState<number>(0);
     const [countGANs, setCountGANs] = useState<number>(0);
@@ -129,7 +126,7 @@ const projects_about_GANs = [
             className="my-32"
           >
             <span className="text-gradient clash-grotesk text-lg font-semibold tracking-tighter">
-              🚀 Featured Projects
+              🚀 Projects
             </span>
             <h2 className="mt-3 text-4xl font-semibold tracking-tight tracking-tighter xl:text-6xl">
               Generative AI projects.
