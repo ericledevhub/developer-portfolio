@@ -56,7 +56,7 @@ const reviews = [
     },
   ];
 
-{/* Testimonial Div*/}
+
 const Testimonials = () => {
 return (
     <section id="testimonials" data-scroll-section>
