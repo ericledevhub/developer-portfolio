@@ -1,4 +1,4 @@
-{/* Testamonial Slider import */}
+// @ts-ignore
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/splide/dist/css/splide.min.css';
 import Avatar from '@mui/material/Avatar';
