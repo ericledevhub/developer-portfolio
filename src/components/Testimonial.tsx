@@ -107,7 +107,7 @@ return (
                                             }
                                             >
                                             <Avatar                                     
-                                                className="w-16 h-16 sm:w-24 sm:h-24 mb-4 font-bold transition duration-300 hover:-translate-y-0.5 hover:bg-white/10" 
+                                                className="w-20 h-20 sm:w-24 sm:h-24 mb-4 font-bold transition duration-300 hover:-translate-y-0.5 hover:bg-white/10" 
                                                 sx={{ bgcolor: review.avatar_color }}>
                                                     {review.initials}
                                             </Avatar>
