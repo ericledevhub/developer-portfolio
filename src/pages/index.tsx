@@ -2,9 +2,7 @@ import Container from "@/components/Container";
 import { useEffect, useRef, Suspense, useState } from "react";
 import styles from "@/styles/Home.module.css";
 import { Button } from "@/components/ui/button";
-import {
-  ChevronRight,
-} from "lucide-react";
+import { ChevronRight} from "lucide-react";
 
 import { TriangleDownIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
@@ -17,13 +15,8 @@ import Career from '@/components/Career';
 import Projects from '@/components/Projects';
 import Expertise from '@/components/Expertise';
 import Testimonials from '@/components/Testimonial';
+import Contact from '@/components/Contact';
 
-{/* About Stats Constants */}
-const aboutStats = [
-  { label: "Months of Experience", value: "9+" },
-  { label: "Key Skills", value: "5+" },
-  { label: "Companies Collaborated With", value: "2" },
-];
 
 
 export default function Home() {
@@ -188,28 +181,7 @@ export default function Home() {
         < Projects />
         < Expertise />
         < Testimonials/>
-
-        {/* Contact */}
-        <section id="contact" data-scroll-section className="my-64">
-          <div
-            data-scroll
-            data-scroll-speed=".4"
-            data-scroll-position="top"
-            className="flex flex-col items-center justify-center rounded-lg bg-gradient-to-br from-primary/[6.5%] to-white/5 px-8 py-16 text-center xl:py-24"
-          >
-            <h2 className="text-4xl font-medium tracking-tighter xl:text-6xl">
-              Let&apos;s collaborate{" "}
-              <span className="text-gradient clash-grotesk">together.</span>
-            </h2>
-            <p className="mt-1.5 text-base tracking-tight text-muted-foreground xl:text-lg">
-              I&apos;m open to new opportunities and eager to
-              discuss new exciting projects.
-            </p>
-            <Link href="mailto:ericledat00@outlook.com" target="_blank" passHref>
-              <Button className="mt-6">Get in touch</Button>
-            </Link>
-          </div>
-        </section>
+        < Contact />
 
       </div>
     </Container>

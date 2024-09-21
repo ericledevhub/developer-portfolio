@@ -69,7 +69,7 @@ return (
           initial={{ opacity: 0, y: -10 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{
-            duration: 2,
+            duration: 1,
             staggerChildren: 0.5,
           }}
           viewport={{ once: true }}
