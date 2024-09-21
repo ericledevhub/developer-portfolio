@@ -117,14 +117,14 @@ return (
 
                                     <div className="col-span-1 md:col-span-9">
 
-                                        <div className="content px-6 md:px-10 lg:px-12 clash-grotesk tracking-wide transition duration-300 hover:-translate-y-0.5">
+                                        <div className="text-base tracking-tight xl:text-lg px-6 md:px-10 lg:px-12 clash-grotesk tracking-wide transition duration-300 hover:-translate-y-0.5">
                                             <p className="user-message">{review.text}<br/><br/>{review.text2}</p>
                                         </div>
 
                                     </div>
                                 </div>
 
-                                <div className="user-info text-center mt-6 transition duration-300 hover:-translate-y-0.5">
+                                <div className="user-info text-center mt-8 pd-4 transition duration-300 hover:-translate-y-0.5">
                                     <p className="text-muted-foreground">{review.name}, {review.role} </p>
                                 </div>
 

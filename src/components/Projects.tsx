@@ -128,7 +128,7 @@ const projects_about_GANs = [
             <span className="text-gradient clash-grotesk text-lg font-semibold tracking-tighter">
               🚀 Projects
             </span>
-            <h2 className="mt-3 text-4xl font-semibold tracking-tight tracking-tighter xl:text-6xl">
+            <h2 className="mt-8 text-4xl font-semibold tracking-tight tracking-tighter xl:text-6xl">
               Generative AI projects.
             </h2>
             <p className="mt-1.5 text-base tracking-tight text-muted-foreground xl:text-lg">

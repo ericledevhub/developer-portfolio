@@ -13,7 +13,7 @@ const About = () => {
             className="my-14 flex max-w-6xl flex-col justify-start space-y-10 relative isolate -z-10"
           >
             <span className="text-gradient clash-grotesk text-lg font-semibold tracking-tighter">
-              ✨ About
+              👨‍💼 About
             </span>
             <h2 className="pb-2 text-3xl font-light leading-normal tracking-tighter text-foreground xl:text-[32px]">
             Recent Engineering Physics graduate from {" "}
@@ -31,7 +31,7 @@ const About = () => {
               {aboutStats.map((stat) => (
                 <div
                   key={stat.label}
-                  className="flex flex-col items-center text-center xl:items-start xl:text-start"
+                  className="flex flex-col items-center text-center xl:items-start xl:text-start "
                 >
                   <span className="clash-grotesk text-gradient text-4xl font-semibold tracking-tight xl:text-6xl">
                     {stat.value}
