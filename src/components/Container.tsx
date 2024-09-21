@@ -43,6 +43,7 @@ const navLinks = [
   { href: "#projects", text: "Projects" },
   { href: "#expertise", text: "Expertise" },
   { href: "#testimonials", text: "Testimonials" },
+  { href: "#contact", text: "Contact" },
 
 ];
 
