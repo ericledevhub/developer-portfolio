@@ -121,6 +121,26 @@ export default function Container(props: ContainerProps) {
     }, 2000);
   }, []);
 
+  {/* Nav Scroll Bar */}
+  const [scrollProgress, setScrollProgress] = useState(0);
+
+  // Handle scroll event to calculate scroll progress
+  const handleScroll = () => {
+    const scrollTop = window.pageYOffset;
+    const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrolled = (scrollTop / docHeight) * 100;
+    setScrollProgress(scrolled);
+  };
+
+  // Add and remove scroll event listener
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <>
       <Head>
@@ -176,6 +196,13 @@ export default function Container(props: ContainerProps) {
           <span className="text-lg font-semibold">eric</span>
         </Link>
 
+        <div className="fixed top-0 left-0 w-full h-1 bg-background rounded-lg z-100">
+          <div
+            className="h-1 bg-primary rounded-lg"
+            style={{ width: `${scrollProgress}%` }}
+          />
+        </div>
+
         {/* Desktop menu */}
         <ul className={styles["desktop-nav"]}>
           {navLinks.map((link, i) => (
@@ -184,7 +211,7 @@ export default function Container(props: ContainerProps) {
               href={link.href}
               text={link.text}
               i={i}
-              className="text-base"
+              className="text-base px-2 py-1 transition duration-300 hover:-translate-y-0.5 hover:bg-white/10 rounded-lg"
             />
           ))}
         </ul>
