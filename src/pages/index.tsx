@@ -1,6 +1,7 @@
 import Container from "@/components/Container";
 import { useEffect, useRef, Suspense, useState } from "react";
 import styles from "@/styles/Home.module.css";
+import CursorCircle from "@/components/ui/cursor";
 import { Button } from "@/components/ui/button";
 import { ChevronRight} from "lucide-react";
 
@@ -80,6 +81,7 @@ export default function Home() {
   {/* About text me*/}
   return (
     <Container>
+      <CursorCircle/>
       <div ref={refScrollContainer}>
         <Gradient />
 

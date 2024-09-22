@@ -11,7 +11,7 @@ const Contact = () => {
             className="flex flex-col items-center justify-center rounded-lg bg-gradient-to-br from-primary/[6.5%] to-white/5 px-8 py-16 text-center xl:py-24"
           >
             <h2 className="text-4xl font-medium tracking-tighter xl:text-6xl">
-              Let&apos;s collaborate{" "}
+              Let&apos;s work{" "}
               <span className="text-gradient clash-grotesk">together.</span>
             </h2>
             <p className="mt-1.5 text-base tracking-tight text-muted-foreground xl:text-lg">
