@@ -3,16 +3,16 @@ import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/splide/dist/css/splide.min.css';
 import Avatar from '@mui/material/Avatar';
 import Badge from '@mui/material/Badge'
-import { indigo, deepPurple } from '@mui/material/colors';
+import { indigo } from '@mui/material/colors';
 import { motion } from "framer-motion";
 
 import { styled } from '@mui/material/styles';
-  
-  const SmallAvatar = styled(Avatar)(({ theme }) => ({
-    width: 33,
-    height: 33,
-    border: `2px solid ${theme.palette.background.paper}`,
-  }));
+
+const SmallAvatar = styled(Avatar)(({ theme }) => ({
+  width: 33,
+  height: 33,
+  border: `2px solid ${theme.palette.background.paper}`,
+}));
 
 
 {/* Testamonials Constants*/}
@@ -127,9 +127,22 @@ return (
                                     </div>
                                 </div>
 
-                                <div className="user-info text-center mt-8 pd-4 transition duration-300 hover:-translate-y-0.5">
-                                    <p className="text-muted-foreground">{review.name}, {review.role} </p>
+                                <div className="user-info flex items-center text-center mt-8 p-4 transition duration-300 hover:-translate-y-0.5">
+                                  <svg
+                                    className="mr-2 h-8 w-8 text-gray-400 dark:text-gray-600"
+                                    aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="currentColor"
+                                    viewBox="0 0 18 14"
+                                  >
+                                    <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
+                                  </svg>
+
+                                  <p className="text-muted-foreground">
+                                    {review.name}, {review.role}
+                                  </p>
                                 </div>
+
 
                             </SplideSlide>
                         ))}
