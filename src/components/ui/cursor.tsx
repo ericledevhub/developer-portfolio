@@ -20,7 +20,7 @@ const CursorCircle = () => {
 
   return (
     <div
-      className="fixed w-12 h-12 border-2 border-gray-500 rounded-full pointer-events-none transform z-40"
+      className="fixed w-12 h-12 border-2 border-gray-500 rounded-full pointer-events-none transform z-40 hidden lg:block"
       style={{
         left: `${position.x}px`,
         top: `${position.y}px`,

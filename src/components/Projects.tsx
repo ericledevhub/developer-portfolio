@@ -189,7 +189,7 @@ const projects_about_GANs = [
                     </CarouselItem>
                   ))}
                 </CarouselContent>
-                <CarouselNext />
+                <CarouselNext className="sm:mt-9"/>
               </Carousel>
               <div className="py-4 text-center text-sm text-muted-foreground">
                 <span className="font-semibold">

@@ -10,12 +10,12 @@ const About = () => {
           <div
             data-scroll
             data-scroll-speed=".4"
-            className="my-14 flex max-w-6xl flex-col justify-start space-y-10 relative isolate -z-10"
+            className="my-28 flex max-w-6xl flex-col justify-start space-y-10 relative isolate -z-10"
           >
             <span className="text-gradient clash-grotesk text-lg font-semibold tracking-tighter">
               👨‍💼 About
             </span>
-            <h2 className="pb-2 text-3xl font-light leading-normal tracking-tighter text-foreground xl:text-[32px]">
+            <h2 className="pb-2 font-light leading-normal tracking-tighter text-foreground sm:text-2xl lg:text-2xl xl:text-3xl">
             Recent Engineering Physics graduate from {" "}
               <span className="text-gradient font-semibold">
                 Chalmers University
