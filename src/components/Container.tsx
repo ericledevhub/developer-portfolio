@@ -211,7 +211,7 @@ export default function Container(props: ContainerProps) {
               href={link.href}
               text={link.text}
               i={i}
-              className="text-base px-2 py-1 transition duration-300 hover:-translate-y-0.5 hover:bg-white/10 rounded-lg"
+              className="text-base px-2 py-1 transition duration-300 hover:-translate-y-0.5 hover:bg-white/10 rounded-md"
             />
           ))}
         </ul>

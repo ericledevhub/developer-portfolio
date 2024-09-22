@@ -76,7 +76,7 @@ return (
           className=""
           >
             <div className="select-none px-4 bg-white/5 p-14 shadow-md backdrop-blur rounded-xl gap-4">
-                <div className="py-10 px-15">
+                <div className="py-2 px-15">
                     <Splide
                         options={{
                             perPage: 1,
@@ -89,15 +89,15 @@ return (
                     >
                         {reviews.map((review) => (
                             <SplideSlide 
-                                className="relative flex flex-col items-center justify-center py-12 px-4 sm:px-8 lg:px-16" 
+                                className="relative flex flex-col items-center justify-center py-10 px-4 sm:px-8 lg:px-16" 
                                 key={review.id}
                             >
-                                <div className="absolute top-4 w-full transition duration-300 hover:-translate-y-0.5">
-                                    <p className="text-lg font-semibold text-gradient text-center w-full">{review.title}</p>                    
+                                <div className="absolute top-6 w-full transition duration-300 hover:-translate-y-0.5">
+                                    <p className="text-xl font-semibold text-gradient text-center w-full">{review.title}</p>                    
                                 </div>
 
-                                <div className="grid grid-cols-1 md:grid-cols-10 gap-4 items-center mt-10 px-10">
-                                    <div className="col-span-1 flex justify-center px-4 md:px-10 lg:px-12">
+                                <div className="grid grid-cols-1 md:grid-cols-10 gap-4 items-center sm:mt-6 lg:mt-10 px-10">
+                                    <div className="col-span-1 flex justify-center px-4 sm:py-6 md:px-10 lg:px-12">
 
                                         <Badge
                                             overlap="circular"
@@ -120,14 +120,14 @@ return (
 
                                     <div className="col-span-1 md:col-span-9">
 
-                                        <div className="text-base tracking-tight xl:text-lg px-6 md:px-10 lg:px-12 clash-grotesk tracking-wide transition duration-300 hover:-translate-y-0.5">
+                                        <div className="text-base tracking-tight xl:text-base px-6 md:px-10 lg:px-12 clash-grotesk tracking-wide transition duration-300 hover:-translate-y-0.5">
                                             <p className="user-message">{review.text}<br/><br/>{review.text2}</p>
                                         </div>
 
                                     </div>
                                 </div>
 
-                                <div className="user-info flex items-center text-center mt-8 p-4 transition duration-300 hover:-translate-y-0.5">
+                                <div className="user-info flex items-center text-center pt-8 p-4 transition duration-300 hover:-translate-y-0.5">
                                   <svg
                                     className="mr-2 h-8 w-8 text-gray-400 dark:text-gray-600"
                                     aria-hidden="true"
@@ -138,7 +138,7 @@ return (
                                     <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
                                   </svg>
 
-                                  <p className="text-muted-foreground">
+                                  <p className="text-muted-foreground text-base sm:text-base">
                                     {review.name}, {review.role}
                                   </p>
                                 </div>
