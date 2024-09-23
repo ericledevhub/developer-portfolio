@@ -43,16 +43,16 @@ export default function Footer() {
           <p className="text-sm font-semibold">{time} UTC+1</p>
         </span>
       </span>
-      <div className="flex flex-row space-x-4">
+      <div className="flex flex-row space-x-2">
         <Link
           href="mailto:ericledat00@outlook.com"
           target="_blank"
           passHref
           className="text-xs text-muted-foreground hover:text-foreground"
         >
-          <Button variant={"outline"} className="border border-gray-300 px-4 py-2 mt-1">
-            <MailIcon className="h-4 w-4 md:mr-2" />
-            <span className="hidden md:flex text-sm">ericledat00@outlook.com</span>
+          <Button variant={"outline"} className="border border-gray-300 px-3 py-1 mt-1">
+            <MailIcon className="h-3 w-3 md:mr-2" />
+            <span className="hidden md:flex text-xs">ericledat00@outlook.com</span>
           </Button>
         </Link>
         <Link
@@ -61,9 +61,9 @@ export default function Footer() {
           passHref
           className="text-xs text-muted-foreground hover:text-foreground"
         >
-        <Button variant={"outline"} className="border border-gray-300 hover:bg-gray-800 hover:text-white px-4 py-2 mt-1">
-          <GitHubLogoIcon className="h-4 w-4 md:mr-2" />
-            <span className="hidden md:flex text-sm">GitHub</span>
+        <Button variant={"outline"} className="border border-gray-300 hover:bg-gray-800 hover:text-white px-3 py-1 mt-1">
+          <GitHubLogoIcon className="h-3 w-3 md:mr-2" />
+            <span className="hidden md:flex text-xs">GitHub</span>
           </Button>
         </Link>
         <Link
@@ -72,9 +72,9 @@ export default function Footer() {
           passHref
           className="text-xs text-muted-foreground hover:text-foreground"
         >
-          <Button variant={"outline"} className="border border-gray-300 hover:text-white px-4 py-2 mt-1" >
-          <LinkedInLogoIcon className="h-4 w-4 md:mr-2" />
-            <span className="hidden md:flex text-sm">LinkedIn</span>
+          <Button variant={"outline"} className="border border-gray-300 hover:text-white px-3 py-1 mt-1" >
+          <LinkedInLogoIcon className="h-3 w-3 md:mr-2" />
+            <span className="hidden md:flex text-xs">LinkedIn</span>
           </Button>
         </Link>
       </div>

@@ -45,7 +45,7 @@ const CursorCircle = () => {
   return (
     <div
     className={`fixed w-12 h-12 border-2 border-gray-500 rounded-full pointer-events-none transform z-40 ${
-      isVisible ? 'block lg:block' : 'hidden'
+      isVisible ? 'hidden md:block' : 'hidden'
     }`}
     
       style={{

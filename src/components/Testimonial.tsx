@@ -89,15 +89,15 @@ return (
                     >
                         {reviews.map((review) => (
                             <SplideSlide 
-                                className="relative flex flex-col items-center justify-center py-10 px-4 sm:px-8 lg:px-16" 
+                                className="relative flex flex-col items-center justify-center py-10 px-4 sm:px-12 lg:px-16" 
                                 key={review.id}
                             >
                                 <div className="absolute top-6 w-full transition duration-300 hover:-translate-y-0.5">
                                     <p className="text-xl font-semibold text-gradient text-center w-full">{review.title}</p>                    
                                 </div>
 
-                                <div className="grid grid-cols-1 md:grid-cols-10 gap-4 items-center sm:mt-6 lg:mt-10 px-10">
-                                    <div className="col-span-1 flex justify-center px-4 sm:py-6 md:px-10 lg:px-12">
+                                <div className="grid grid-cols-1 md:grid-cols-10 gap-4 items-center mt-6 lg:mt-10 px-10">
+                                    <div className="col-span-1 flex justify-center px-4 py-6 md:px-10 lg:px-12">
 
                                         <Badge
                                             overlap="circular"
@@ -108,17 +108,19 @@ return (
                                             >
                                             <Avatar                                     
                                                 className="mb-4 font-bold transition duration-300 hover:-translate-y-0.5 hover:bg-white/10" 
-                                                sx={{ bgcolor: review.avatar_color ,
-                                                  width: 100,
-                                                  height: 100,
-                                                }}>
+                                                sx={{
+                                                  bgcolor: review.avatar_color,
+                                                  width: { xs: 80, sm: 100 },  
+                                                  height: { xs: 80, sm: 100 }, 
+                                                }}
+                                                >
                                                     {review.initials}
                                             </Avatar>
 
                                         </Badge>
                                     </div>
 
-                                    <div className="col-span-1 md:col-span-9">
+                                    <div className="col-span-1 md:col-span-9 px-4">
 
                                         <div className="text-base tracking-tight xl:text-base px-6 md:px-10 lg:px-12 clash-grotesk tracking-wide transition duration-300 hover:-translate-y-0.5">
                                             <p className="user-message">{review.text}<br/><br/>{review.text2}</p>

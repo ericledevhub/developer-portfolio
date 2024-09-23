@@ -109,11 +109,11 @@ export default function Home() {
                 data-scroll-speed=".06"
                 data-scroll-direction="horizontal"
               >
-                <span className="text-6xl tracking-tighter text-foreground 2xl:text-8xl">
+                <span className=" tracking-tighter text-foreground text-6xl md:text-8xl">
                   Hello, I&apos;m
                   <br />
                 </span>
-                <span className="clash-grotesk text-gradient text-6xl 2xl:text-8xl">
+                <span className="clash-grotesk text-gradient text-6xl md:text-8xl">
                   Eric Le.
                 </span>
               </h1>
@@ -121,7 +121,7 @@ export default function Home() {
                 data-scroll
                 data-scroll-enable-touch-speed
                 data-scroll-speed=".06"
-                className="mt-1 max-w-lg tracking-tight text-muted-foreground 2xl:text-xl"
+                className="mt-1 max-w-lg tracking-tight text-muted-foreground lg:text-xl"
               >
                   An innovative Generative AI developer with expertise building LLMs and data analysis. 
                   Skilled in developing and deploying python applications with a strong problem-solving mindset.  
@@ -156,6 +156,7 @@ export default function Home() {
               <Button
                 variant="outline"
                 onClick={() => scrollTo(document.querySelector("#about"), "center")}
+                className="px-4 py-2 rounded-2xl"
               >
                 Scroll to discover{" "}
                 <TriangleDownIcon className="mt-1 animate-bounce" />

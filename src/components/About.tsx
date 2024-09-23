@@ -15,7 +15,8 @@ const About = () => {
             <span className="text-gradient clash-grotesk text-lg font-semibold tracking-tighter">
               👨‍💼 About
             </span>
-            <h2 className="pb-2 font-light leading-normal tracking-tighter text-foreground sm:text-2xl lg:text-2xl xl:text-3xl">
+            
+            <h2 className="pb-2 font-light leading-normal tracking-tighter text-foreground text-xl lg:text-2xl xl:text-3xl">
             Recent Engineering Physics graduate from {" "}
               <span className="text-gradient font-semibold">
                 Chalmers University
@@ -27,21 +28,23 @@ const About = () => {
                 LLM-based agent 
               </span> for MF4 file analysis, capable of translating user requests into code and visualizations. Additionally, I developed an SQL analysis agent for dynamic query generation and data plotting. Skilled in ideation, prototyping, and delivering innovative solutions.
             </h2>
-            <div className="grid grid-cols-2 gap-8 xl:grid-cols-3">
+
+            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:gap-8">
               {aboutStats.map((stat) => (
                 <div
                   key={stat.label}
-                  className="flex flex-col items-center text-center xl:items-start xl:text-start "
+                  className="flex flex-col items-center text-center sm:items-center lg:items-start lg:text-start"
                 >
-                  <span className="clash-grotesk text-gradient text-4xl font-semibold tracking-tight xl:text-6xl">
+                  <span className="clash-grotesk text-gradient text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl xl:text-6xl">
                     {stat.value}
                   </span>
-                  <span className="tracking-tight text-muted-foreground xl:text-lg">
+                  <span className="tracking-tight text-sm text-muted-foreground sm:text-base lg:text-lg">
                     {stat.label}
                   </span>
                 </div>
               ))}
             </div>
+
           </div>
         </section>
         
