@@ -93,7 +93,7 @@ return (
                                 key={review.id}
                             >
                                 <div className="absolute top-6 w-full transition duration-300 hover:-translate-y-0.5">
-                                    <p className="text-xl font-semibold text-gradient text-center w-full">{review.title}</p>                    
+                                    <p className="text-lg md:text-xl font-semibold text-gradient text-center w-full">{review.title}</p>                    
                                 </div>
 
                                 <div className="grid grid-cols-1 md:grid-cols-10 gap-4 items-center mt-6 lg:mt-10 px-10">
@@ -122,7 +122,7 @@ return (
 
                                     <div className="col-span-1 md:col-span-9 px-4">
 
-                                        <div className="text-base tracking-tight xl:text-base px-6 md:px-10 lg:px-12 clash-grotesk tracking-wide transition duration-300 hover:-translate-y-0.5">
+                                        <div className="text-base px-6 md:px-10 lg:px-12 transition duration-300 hover:-translate-y-0.5">
                                             <p className="user-message">{review.text}<br/><br/>{review.text2}</p>
                                         </div>
 
