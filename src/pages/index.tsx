@@ -100,7 +100,7 @@ export default function Home() {
             >
               <span className={styles.pill}>Generative AI</span>
               <span className={styles.pill}>LLM Agents</span>
-              <span className={styles.pill}>Python Applications</span>
+              <span className={styles.pill}>Web Applications</span>
             </div>
             <div>
               <h1
