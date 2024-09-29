@@ -123,7 +123,7 @@ return (
                                     <div className="col-span-1 md:col-span-9 px-4">
 
                                         <div className="text-base px-6 md:px-10 lg:px-12 transition duration-300 hover:-translate-y-0.5">
-                                            <p className="user-message">{review.text}<br/><br/>{review.text2}</p>
+                                            <p className="user-message clash-grotesk">{review.text}<br/><br/>{review.text2}</p>
                                         </div>
 
                                     </div>
