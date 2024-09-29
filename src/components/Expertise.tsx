@@ -13,7 +13,7 @@ const expertise = [
   {
     headericon: Code2,
     service: "LLM Agent Development",
-    description: "Creating LLM agents using Langchain, Llama Index, OpenAI, and Mistral",
+    description: "Creating LLM agents using Langchain, Llama Index, OpenAI, and Mistral.",
     visualicons: [
         "/assets/graphics/langchain.svg", 
         "/assets/graphics/llamaindex.svg",
@@ -31,7 +31,7 @@ const expertise = [
   },
   {
     headericon: AppWindow,
-    service: "LLM-Powered Applications",
+    service: "Application Development",
     description:
       "Developing LLM-integrated applications, using backend and frontend framworks.",
     visualicons: [
@@ -59,32 +59,34 @@ const expertise = [
     visualicons: [
         "/assets/graphics/kubernetes.svg", 
         "/assets/graphics/netlify.svg",
+        "/assets/graphics/vercel.svg", 
     ],
     visualiconstext: [
         "kubernetes", 
         "netlify",
+        "vercel",
     ],
   },
   {
     headericon: Database,
-    service: "Data analytics",
+    service: "Data Analytics",
     description:
       "Extracting insights from SQL databases to inform decision-making.",
     visualicons: [
         "/assets/graphics/sqlite.svg",
         "/assets/graphics/postgres.svg", 
         "/assets/graphics/milvus.svg", 
-        "/assets/graphics/matplotlib.svg", 
-        "/assets/graphics/plotly.svg", 
         "/assets/graphics/pandas.svg", 
+        "/assets/graphics/excel.svg", 
+        "/assets/graphics/python.svg", 
     ],
     visualiconstext: [
         "sqlite",
         "postgres", 
         "milvus", 
-        "matplotlib", 
-        "plotly", 
         "pandas", 
+        "excel",
+        "python",
     ],
   },
   {
