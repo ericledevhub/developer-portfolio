@@ -8,43 +8,51 @@ import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timel
 import 'react-vertical-timeline-component/style.min.css';
 
 import { SiVolvo } from "react-icons/si";
+import { LiaHackerrank } from "react-icons/lia";
 
 
 const careerData = [
+  {
+    date: " 27 Sep 2024 - 28 Sep 2024",
+    icon: <LiaHackerrank />,
+    title: "Gradient Descent Into The Future – LLM Hackathon",
+    subtitle: "Stockholm, SE",
+    description: "At this hackathon, I built an LLM-powered PDF assistant that generates summaries, explains concepts, and visualizes tables, making information more accessible and user-friendly."
+  },
   {
     date: "Jun 2024 - Sep 2024",
     icon: <SiVolvo />,
     title: "Summer Worker @ Volvo Group Technology",
     subtitle: "Gothenburg, SE",
-    description: "Developed an LLM-based SQL agent for automated query generation, facilitating efficient data extraction and visualization."
+    description: "As a summer worker, I developed an LLM-based SQL agent that automates query generation, simplifying data extraction and visualization."
   },
   {
     date: "Jan 2024 - Jun 2024",
     icon: < SiVolvo />,
     title: "Master's Thesis @ Volvo Group Technology",
     subtitle: "Gothenburg, SE",
-    description: "Engineered an LLM-driven MF4 agent and application to streamline data analysis processes."
+    description: "For my master’s thesis, I created an LLM-driven MF4 agent to streamline data analysis, providing practical solutions that enhance decision-making at Volvo."
   },
   {
     date: "Jun 2023 - Aug 2023",
     icon: < Plane />,
     title: "Internship @ BHSOFT Company",
     subtitle: "Hanoi, VN",
-    description: "Researched and implemented Generative Adversarial Networks (GANs) for the creation of realistic images."
+    description: "As a summer intern, I researched and implemented Generative Adversarial Networks (GANs) for the creation of realistic images."
   },
   {
     date: "Aug 2022 - Jun 2024",
     icon: < GraduationCap />,
     title: "Master's Degree in Complex Adaptive Systems",
     subtitle: "Chalmers University, Gothenburg, SE",
-    description: "Specialized in Machine Learning and Artificial Intelligence."
+    description: "I graduated with a master’s in Machine Learning and AI, focusing on innovative solutions for complex systems."
   },
   {
     date: "Aug 2019 - Jun 2022",
     icon: < GraduationCap />,
     title: "Bachelor's Degree in Engineering Physics",
     subtitle: "Chalmers University, Gothenburg, SE",
-    description: "Focused on theoretical mathematics and physics."
+    description: "I earned my bachelor’s in Engineering Physics, where I really developed my analytical skills and found a passion for tackling complex problems head-on."
   },
 ];
 
