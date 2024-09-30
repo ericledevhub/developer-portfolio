@@ -2,6 +2,7 @@ import {
   GraduationCap,
   Plane,
   Star,
+  Volume2,
 } from "lucide-react";
 
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
@@ -10,33 +11,39 @@ import 'react-vertical-timeline-component/style.min.css';
 import { SiVolvo } from "react-icons/si";
 import { LiaHackerrank } from "react-icons/lia";
 
-
 const careerData = [
   {
     date: " 27 Sep 2024 - 28 Sep 2024",
     icon: <LiaHackerrank />,
-    title: "Gradient Descent Into The Future – LLM Hackathon",
+    title: "LLM Hackathon, Organized by Gradient Descent | KTH Royal Institute of Technology",
     subtitle: "Stockholm, SE",
     description: "At this hackathon, I built an LLM-powered PDF assistant that generates summaries, explains concepts, and visualizes tables, making information more accessible and user-friendly."
   },
   {
+    date: " 11 Sep 2024",
+    icon: <Volume2 />,
+    title: "Speaker at the Generative AI Conference for Automotive, Hosted by Automotive IQ",
+    subtitle: "Detroit, USA",
+    description: "Delivered a remote presentation of my master's thesis, accompanied by my supervisor, who represented Volvo in person at the event."
+  },
+  {
     date: "Jun 2024 - Sep 2024",
     icon: <SiVolvo />,
-    title: "Summer Worker @ Volvo Group Technology",
+    title: "Summer Worker at Volvo Group Technology",
     subtitle: "Gothenburg, SE",
     description: "As a summer worker, I developed an LLM-based SQL agent that automates query generation, simplifying data extraction and visualization."
   },
   {
     date: "Jan 2024 - Jun 2024",
     icon: < SiVolvo />,
-    title: "Master's Thesis @ Volvo Group Technology",
+    title: "Master's Thesis at Volvo Group Technology",
     subtitle: "Gothenburg, SE",
     description: "For my master’s thesis, I created an LLM-driven MF4 agent to streamline data analysis, providing practical solutions that enhance decision-making at Volvo."
   },
   {
     date: "Jun 2023 - Aug 2023",
     icon: < Plane />,
-    title: "Internship @ BHSOFT Company",
+    title: "Internship at BHSOFT Company",
     subtitle: "Hanoi, VN",
     description: "As a summer intern, I researched and implemented Generative Adversarial Networks (GANs) for the creation of realistic images."
   },
