@@ -42,7 +42,7 @@ export default function Home() {
 
       sections.forEach((section) => {
         const sectionTop = section.offsetTop;
-        if (window.scrollY >= sectionTop - 300) {
+        if (window.scrollY >= sectionTop - 250) {
           current = section.getAttribute("id") ?? "";
         }
       });
